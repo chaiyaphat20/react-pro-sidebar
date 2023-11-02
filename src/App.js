@@ -1,6 +1,10 @@
+import HeaderBar from "./layout/HeaderBar";
+
 function App() {
   return (
-    <div>Hello world</div>
+    <div>
+      <HeaderBar />
+    </div>
   );
 }
 

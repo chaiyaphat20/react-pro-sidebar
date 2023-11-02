@@ -6,7 +6,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-
+import AccountBoxSharpIcon from '@mui/icons-material/AccountBoxSharp';
 const HeaderBar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -36,7 +36,7 @@ const HeaderBar = () => {
           <SettingsOutlinedIcon />
         </IconButton>
         <IconButton>
-          <PersonOutlinedIcon onClick={handleMenu} />
+          <AccountBoxSharpIcon onClick={handleMenu} />
           <Menu
             id="menu-appbar"
             anchorEl={anchorEl}
@@ -52,7 +52,7 @@ const HeaderBar = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <Link to="#" className="menu-bars">
+            <Link to="/555" className="menu-bars">
               <MenuItem onClick={handleClose}>Profile</MenuItem>
             </Link>
             <Link to="#" className="menu-bars">
